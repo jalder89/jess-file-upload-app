@@ -8,8 +8,14 @@ const app = new App({
     signingSecret: process.env.SLACK_SIGNING_SECRET
 });
 
-// Upload file to Slack
-fileUpload.uploadFile();
+// Lsitens for shortcut event callback file_upload_test
+app.shortcut('file_upload_test', async ({ ack, client }) => {
+    // Acknowledge shortcut request
+    await ack();
+
+    // Call fileUpload function
+    fileUpload.uploadFile(client);
+});
 
 // Start your app
 (async () => {

@@ -1,7 +1,10 @@
+const { App } = require('@slack/bolt');
+let { createReadStream } = require('fs');
+
 const fileName = "./files/being-silly-hey.gif";
 const channelId = process.env.SLACK_PRIVATE_CHANNEL_ID;
 
-async function uploadFile() {
+async function uploadFile(client) {
     try {
         // Call the files.upload method using the WebClient
         const result = await client.files.upload({
