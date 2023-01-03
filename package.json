@@ -1,0 +1,24 @@
+{
+  "name": "jess-file-upload-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalder89/jess-file-upload-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jalder89/jess-file-upload-app/issues"
+  },
+  "homepage": "https://github.com/jalder89/jess-file-upload-app#readme",
+  "dependencies": {
+    "@slack/bolt": "^2.0.1",
+    "dotenv": "^16.0.3"
+  }
+}
