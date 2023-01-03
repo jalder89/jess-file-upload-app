@@ -1,6 +1,6 @@
 // initial slack app setup
 const { App } = require('@slack/bolt');
-const { config } = require('dotenv');
+require('dotenv').config();
 const fileUpload = require('./functions/fileUpload');
 
 const app = new App({
